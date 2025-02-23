@@ -1,0 +1,41 @@
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:orientation="vertical"-->
+<!--    android:padding="16dp">-->
+
+<!--    <RadioGroup-->
+<!--        android:id="@+id/radioGroupFood"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content">-->
+
+<!--        <RadioButton android:id="@+id/radioPizza" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Pizza"/>-->
+<!--        <RadioButton android:id="@+id/radioBurger" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Burger"/>-->
+<!--        <RadioButton android:id="@+id/radioSushi" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Sushi"/>-->
+
+<!--    </RadioGroup>-->
+
+<!--    <Button android:id="@+id/btnConfirmFood" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Xác nhận"/>-->
+<!--</LinearLayout>-->
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewFood"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <Button
+        android:id="@+id/btnConfirmFood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Xác nhận"
+        android:layout_gravity="center_horizontal"/>
+</LinearLayout>
+

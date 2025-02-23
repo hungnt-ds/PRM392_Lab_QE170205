@@ -1,0 +1,39 @@
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:orientation="vertical"-->
+<!--    android:padding="16dp">-->
+
+<!--    <RadioGroup-->
+<!--        android:id="@+id/radioGroupDrink"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content">-->
+
+<!--        <RadioButton android:id="@+id/radioCoke" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Coca Cola"/>-->
+<!--        <RadioButton android:id="@+id/radioTea" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Trà xanh"/>-->
+<!--        <RadioButton android:id="@+id/radioCoffee" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Cà phê"/>-->
+
+<!--    </RadioGroup>-->
+
+<!--    <Button android:id="@+id/btnConfirmDrink" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Xác nhận"/>-->
+<!--</LinearLayout>-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewDrink"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <Button
+        android:id="@+id/btnConfirmDrink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Xác nhận"
+        android:layout_gravity="center_horizontal"/>
+</LinearLayout>
